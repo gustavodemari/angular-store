@@ -11,7 +11,7 @@
       name: 'Dodecahedron',
       price: 2.95,
       description: '. . .',
-      canPurchase: false,
+      canPurchase: true,
       soldOut: true
     },
     {
@@ -20,7 +20,7 @@
       description: '. . .',
       canPurchase: true,
       soldOut: false
-    },
+    }
   ];
 }
 )();
