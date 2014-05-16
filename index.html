@@ -11,7 +11,7 @@
           <ul class="list-group">
             <li class="list-group-item" ng-repeat="product in store.products">
               <h3> {{product.name}} 
-                <em class="pull-right"> {{product.price}}</em>
+                <em class="pull-right"> {{product.price | currency:"R$ "}}</em>
               </h3>
             </li>
           </ul>
