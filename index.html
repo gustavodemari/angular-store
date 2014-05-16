@@ -13,12 +13,25 @@
               <h3> {{product.name}} 
                 <em class="pull-right"> {{product.price | currency:"R$ "}}</em>
               </h3>
-              <ul class="nav nav-pills">
-                <li><a href ng-click="tab = 1">Description</a>
-                <li><a href ng-click="tab = 2">Specifications</a>
-                <li><a href ng-click="tab = 3">Reviews</a>
-              </ul>
-              {{tab}}
+              <section ng-init="tab = 1">
+                <ul class="nav nav-pills">
+                  <li><a href ng-click="tab = 1">Description</a>
+                  <li><a href ng-click="tab = 2">Specifications</a>
+                  <li><a href ng-click="tab = 3">Reviews</a>
+                </ul>
+              </section>
+              <div class="panel">
+                <h4>Description</h4>
+                <p>{{product.description}}</p>
+              </div>
+              <div class="panel">
+                <h4>Specifications</h4>
+                <blockquote>None yet</blockquote>
+              </div>
+              <div class="panel">
+                <h4>Reviews</h4>
+                <blockquote>None yet</blockquote>
+              </div>
             </li>
           </ul>
         </div>
