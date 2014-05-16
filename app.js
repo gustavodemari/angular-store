@@ -1,2 +1,5 @@
-//Loading store module
-var app = angular.module('store', []);
+(function(){
+  //Loading store module
+  var app = angular.module('store', []);
+}
+)();
