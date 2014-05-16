@@ -6,8 +6,8 @@
     this.products = gems;
   });
 
-  app.controler('PanelController', function(){
-    
+  app.controller('PanelController', function(){
+    this.tab = 1;
   });
 
   var gems = [
